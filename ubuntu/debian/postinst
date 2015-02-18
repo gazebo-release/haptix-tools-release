@@ -1,5 +1,10 @@
 # Add group for crontabs
-getent group haptix > /dev/null 2>&1 || addgroup --system haptix
+getent group haptix > /dev/null 2>&1 || addgroup haptix
+adduser --home /home/haptix --ingroup haptix  --quiet || true
 
-# Install files in home directory
-
+# Proper perms to files
+chgrp haptix /home/haptix/Desktop/haptixStart.desktop
+chown haptix /home/haptix/Desktop/haptixUpdate.desktop
+chgrp haptix /home/haptix/Desktop/haptixUpdate.desktop
+chown haptix /home/haptix/Desktop/haptixSupport.desktop
+chgrp haptix /home/haptix/Desktop/haptixSupport.desktop
