@@ -1,0 +1,22 @@
+Source: haptix-tools
+Standards-Version: 3.9.4
+Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
+Section: science
+Priority: extra
+Build-Depends: cmake,
+               pkg-config,
+               debhelper (>= 7.0.50~)
+Vcs-Browser: https://bitbucket.org/osrf/haptix-tools-release
+Vcs-Hg: https://bitbucket.org/osrf/haptix-tools-release
+Homepage: https://bitbucket.org/osrf/haptix-tools
+
+Package: haptix-tools
+Architecture: any
+Section: misc
+Pre-Depends: ${misc:Pre-Depends}
+Depends: x11vnc,
+         adduser,
+         ${shlibs:Depends}, 
+         ${misc:Depends}
+Multi-Arch: same
+Description: Haptix project tools and scripts
