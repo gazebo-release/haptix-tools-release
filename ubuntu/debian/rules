@@ -5,5 +5,10 @@
 # dh-make output file, you may use that output file without restriction.
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
+.PHONY: override_dh_auto_install
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/haptix-tools
+
 %:
 	dh $@ --parallel
