@@ -1,3 +1,9 @@
+haptix-tools (0.2.0-1~trusty) trusty; urgency=medium
+
+  * haptix-tools 0.2.0-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 20 Feb 2015 11:54:05 +0100
+
 haptix-tools (0.1.0-1~trusty) trusty; urgency=medium
 
   * haptix-tools 0.1.0-1 release
