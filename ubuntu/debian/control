@@ -15,6 +15,7 @@ Architecture: any
 Section: misc
 Pre-Depends: ${misc:Pre-Depends}
 Depends: mesa-utils,
+         openssh-client,
          x11vnc,
          adduser,
          ${shlibs:Depends},
