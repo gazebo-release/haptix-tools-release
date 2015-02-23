@@ -14,9 +14,10 @@ Package: haptix-tools
 Architecture: any
 Section: misc
 Pre-Depends: ${misc:Pre-Depends}
-Depends: x11vnc,
+Depends: mesa-utils,
+         x11vnc,
          adduser,
-         ${shlibs:Depends}, 
+         ${shlibs:Depends},
          ${misc:Depends}
 Multi-Arch: same
 Description: Haptix project tools and scripts
