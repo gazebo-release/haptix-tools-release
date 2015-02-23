@@ -1,5 +1,5 @@
 # Add group for crontabs
-getent group haptix > /dev/null 2>&1 || addgroup haptix
+# getent group haptix > /dev/null 2>&1 || addgroup haptix
 
 # Check if there is a "haptix" user
 getent passwd haptix > /dev/null
