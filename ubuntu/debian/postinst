@@ -1,7 +1,7 @@
-# Add group for crontabs
+# Add group for crontabs.
 # getent group haptix > /dev/null 2>&1 || addgroup haptix
 
-# Check if there is a "haptix" user
+# Check if there is a "haptix" user.
 getent passwd haptix > /dev/null
 
 if [ $? -ne 0 ]; then
@@ -18,9 +18,12 @@ if [ ! -f /home/haptix/.ssh/id_rsa.pub ]; then
   su haptix -c "ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
 fi
 
-# Proper perms to files
+# Proper perms to files.
+chown haptix /home/haptix/Desktop/haptixStart.desktop
 chgrp haptix /home/haptix/Desktop/haptixStart.desktop
 chown haptix /home/haptix/Desktop/haptixUpdate.desktop
 chgrp haptix /home/haptix/Desktop/haptixUpdate.desktop
 chown haptix /home/haptix/Desktop/haptixSupport.desktop
 chgrp haptix /home/haptix/Desktop/haptixSupport.desktop
+chown haptix /home/haptix/Desktop/checkStereo.desktop
+chgrp haptix /home/haptix/Desktop/checkStereo.desktop
