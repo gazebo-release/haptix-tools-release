@@ -12,6 +12,8 @@ if [ $? -ne 0 ]; then
   passwd haptix
 fi
 
+chown -R haptix:haptix /home/haptix
+
 # Generate SSH key without overwrite.
 su haptix -c "echo -e 'n' | ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
 
