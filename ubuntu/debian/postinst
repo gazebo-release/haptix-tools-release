@@ -13,8 +13,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Generate SSH key without overwrite.
-  su haptix -c "echo -e 'n' | ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
-fi
+su haptix -c "echo -e 'n' | ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
 
 # Proper perms to files.
 chown haptix /home/haptix/Desktop/haptixStart.desktop

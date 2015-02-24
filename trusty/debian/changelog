@@ -1,3 +1,9 @@
+haptix-tools (0.5.3-1~trusty) trusty; urgency=medium
+
+  * haptix-tools 0.5.3-1 release
+
+ -- Carlos Aguero <caguero@osrfoundation.org>  Mon, 23 Feb 2015 16:55:51 +0100
+
 haptix-tools (0.5.2-1~trusty) trusty; urgency=medium
 
   * haptix-tools 0.5.2-1 release
